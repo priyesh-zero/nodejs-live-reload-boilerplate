@@ -4,7 +4,9 @@
   "description": "This is a boilerplate for a node js app so as to use this while building server side node website.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run server:prod",
+    "server:dev": "nodemon server.js",
+    "server:prod": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/priyesh-zero/nodejs-live-reload-boilerplate/issues"
   },
-  "homepage": "https://github.com/priyesh-zero/nodejs-live-reload-boilerplate#readme"
+  "homepage": "https://github.com/priyesh-zero/nodejs-live-reload-boilerplate#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
